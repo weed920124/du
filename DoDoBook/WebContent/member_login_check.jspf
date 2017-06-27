@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%
+		String sMemberid = (String)session.getAttribute("sMemberid");
+    	if (sMemberid == null) {
+    		response.sendRedirect("member_login_form.jsp");
+    		return;
+    	}
+    %>
